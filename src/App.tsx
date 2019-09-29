@@ -5,7 +5,7 @@ import { Route, Link, Switch, BrowserRouter as Router,  } from 'react-router-dom
 import Navbar from './Components/Nav/Navbar';
 import Sidebar from './Components/Nav/Sidebar';
 import Home from './Pages/Home/Home'
-import {Debug, Counter} from './Pages/Debug/Debug';
+import {Debug, CounterComponent} from './Pages/Debug/Debug';
 import Automation from './Pages/Automation/Automation';
 import Users from './Pages/Users/Users';
 import About from './Pages/About/About';
@@ -27,7 +27,7 @@ const routing = (
       <Route  path="/automation/resources" component={Home} />
       <Route  path="/automation/resources" component={Home} />
       <Route  path="/about" component={About} />
-      <Route  path="/debug" component={Counter} />
+      <Route  path="/debug" component={CounterComponent} />
       <Route  path="/" exact component={Debug} />
 
     </Switch>
