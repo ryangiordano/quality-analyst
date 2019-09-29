@@ -2,8 +2,6 @@ const initialState = {
   counter: 0
 }
 const reducer = (state = initialState, action)=>{
-  console.log(action)
-
   if(action.type ==='INCREMENT'){
     return {
       ...state,
